@@ -69,6 +69,7 @@ If not avaliable for download please use the Kaggle link or visit "https://drive
 ## Future Work:
 1. The dataset from airlines and airports should not be applied until we have trained the models and explaining the features with coefficeients. (These two datasets are more related as supplementary material  for flights)
 2. In our model interption, current error is about 15-20 minutes error on predict the arrival_delay. (which is reasonable). But we will need to optimize our regression model. (currently only apllied regulaization on the linear regression)
+3. Accuracy is only applied to Ridge Regression currently. Further work needed. (Data size is not big as we thought yet)
 
 
 ## Group Members:
