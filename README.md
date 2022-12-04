@@ -255,7 +255,15 @@ The dataframe has 5819079 rows × 10 columns at this point. Six of features “M
 
 - Results analysis: <br/> 
 
+&emsp;Overall the best model we achieved is Lasso Regression and Ridge Regression. The testing error in around 143 to 148. Back to the context for prediction, the error indicates the model predict arrival delay in about 11-13 minutes. 
+
 - Possibly frauts / short-comings: <br/>
+
+&emsp;The original selected data contains a huge amount of samples, so the model can be only built on part of it based on the machine’s limit. It would be better to randomly extract a larger portion from the original dataset. 
+
+&emsp;Also, the purpose set at the initial stage is to fit with regression models and predict the numerical value of delays. It could be better to make a classification problem to indicate ranges of delaying time. Then there could be more options of models to build with.
+
+&emsp;We are lucky to find the "sweet point" for balancing the accuracy without overfitting, in the simple models. With higher efficiency from gradient descent, it has overall good performance. 
 
 ## Conclusion <br/>
 
