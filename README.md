@@ -18,7 +18,34 @@
  
  ## Figures <br/>
  
- 
+We use pair plot and heat map to show the distribution of each feature and the correlation between features. From the pair plot, we can see that none of the features follow the normal distribution and that is why we choose MixMax scalar to standardize our data instead of normalizing. 
+
+![heatmap](https://user-images.githubusercontent.com/84880988/205522309-44018b5f-8758-4fc7-9c9a-462ec7977201.png)
+
+![output](https://user-images.githubusercontent.com/84880988/205522215-9ba765de-1629-441f-a3fd-df5b6a491d1f.png)
+
+After testing around several regression models, we finally decide to use ridge regression. We plot the full scatter plot for the training data and each color indicates one feature. 
+```python
+print("Full scatter plot for the training data")
+plt.figure(figsize=(7, 7))
+for i in range (len(X_train.columns)):
+  sns.scatterplot(X_train[X_train.columns[i]], y_train)
+plt.show()
+```
+![scatterplot](https://user-images.githubusercontent.com/84880988/205522502-479d87d7-1151-4a67-907e-9dbfc676bc15.png)
+
+
+
+We also scatter plot the three most significant features that influence the target variable arrival delay by first printing out all model weights. 
+```python
+print("Most Relvant Features")
+plt.figure(figsize=(7, 7))
+sns.scatterplot(X_train["DEPARTURE_DELAY"], y_train)
+sns.scatterplot(X_train["AIR_TIME"], y_train)
+sns.scatterplot(X_train["DISTANCE"], y_train)
+plt.show()
+```
+![scatterplot_three_features](https://user-images.githubusercontent.com/84880988/205522548-4a6454fb-d7fe-4437-984d-97f24215d487.png) 
  
  
  ## Methods <br/>
