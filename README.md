@@ -267,6 +267,9 @@ The dataframe has 5819079 rows × 10 columns at this point. Six of features “M
 
 ## Conclusion <br/>
 
+&emsp;Overall, the models based on Lasso Regression and Ridge Regression have a good performance with an error of about 12 minutes in predicting the arrival delay. With details of weights “air time”, “distance” and “departure delay” has the most significant impact on “arrival delay” compared to other attributes. One of the main editions that could be applied in future is to apply more sub-attributes that are provided from the same source. For example, in this dataset, we trained with contribute “origin airport” and “destination airport”. There are actually more attributes related to the airport,  for example, “longitude”, and “latitude”. These could bring data exploration on weather aspects, that we did not apply in this project.
+
+&emsp;Another of the main editions could be applied to a slightly different classification question “Will the flight delay” instead of “how long will the flight delay”. It can also bring more dimensions of attributes with attributes “canceled” and “diverted”. Some thresholds could be adjusted to determine delay or not or slight delay. And more models could be approached.
  
 ## Group Members:
 Zhaolin Zhong, 
