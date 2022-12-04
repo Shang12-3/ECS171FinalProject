@@ -229,7 +229,7 @@ print("Accuracy score: ",z)
 
 
 ## Discussion <br/>
-- Data Preprocessing: 
+- Data Preprocessing: <br/>
 &emsp; The very first part of this project is to extract the features that relates to the main purpose of this project (predict the ARRIVAL_DELAY). So the data set of “airlines” and “airports” are not selected to use. All the features in “flights” data that are unrelated with predicting is dropped in the first place. For example, “weather_delay”, “late_airport_dealy”, “cancelled” and “diverted”. These features indicates either not delaying or reasons of delaying. The “YEAR” is dropped since all data are collected from 2015. 
 
 &emsp;Then the overlapping features are dropped. For example, there are two features “scheduled_departure” and “departure_time),  which is overlapped with “departure_delay”. “Tail_number” is funcitoning same as index. These overlapped features are dropped.
@@ -240,9 +240,11 @@ The dataframe has 5819079 rows × 10 columns at this point. Six of features “M
 &emsp;Only three features include NAN Values, “ARRIVAL_DELAY”, “DEPARTURE_DELAY”, “AIR_TIME”. For the first two, NAN Values indicates there is no delay happening, and the cell is filled by 0.  For “AIR_TIME”, NAN values indicates either “diverted” or “canceld”, these samples are dropped. Compare to the overall amount of samples, 0.18%  of samples are dropped, and have a small impact.
 
 
-- Model Selection and Training:
-- Results analysis:
-- Possibly frauts / short-comings: 
+- Model Selection and Training: <br/>
+
+- Results analysis: <br/> 
+
+- Possibly frauts / short-comings: <br/>
 
 ## Conclusion <br/>
 
