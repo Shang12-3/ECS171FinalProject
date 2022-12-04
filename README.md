@@ -12,7 +12,7 @@
 
 
 ## Introduction <br/>
-&emsp;The purpose of this project is to build a regression model for predicting flights delay in the U.S.  For a better prediction model, passengers can have better schedule planning instead of waiting in the airport. Related to daily experience, people tend to believe that airport congestion or specific low-cost flight is the main cause of flight delays. The model should be able to reveal how each factor impacts the flight's delay and how long the delay might be. <br/>
+&emsp;The purpose of this project is to build a regression model for predicting flights delay in the U.S.  For a better prediction model, passengers can have better schedule planning instead of missing any possible important events. Related to daily experience, people tend to believe that airport congestion or specific low-cost flight is the main cause of flight delays. The model should be able to reveal how each factor impacts the flight's delay and how long the delay might be. <br/>
 &emsp;The dataset is found from Kaggle's “2015 Flight Delays and Cancellations”, originally abstracted from the U.S. Department of Transportation (DOT). For this project, based on different goals compared to the Kaggle Event, not full of the data was used to build the prediction model for delays. The model mainly relies on the  “flights.csv”, which includes detail of each flight (5819079 samples) in the USA from 2015. <br/>
  
  ## Methods <br/>
@@ -140,8 +140,6 @@ display(df_flights.isna().any())
  
  Note: Only the code of building models is displaying below. Plotting/graphs and Full code with comments for Models Training can be found in "Model_Training.ipynb"
  
-```python
-```
  1. Linear Regression (by SGD Regressor)
 
 ```python
@@ -223,9 +221,17 @@ print("Accuracy score: ",z)
 
 ## Results <br/>
 
+
 ## Discussion <br/>
+- Data Preprocessing: 
+&emsp; The very first part of this project is to extract the features that 
+
+- Model Selection and Training:
+- Results analysis:
+- Possibly frauts / short-comings: 
 
 ## Conclusion <br/>
+
  
 ## Group Members:
 Zhaolin Zhong, 
