@@ -230,6 +230,7 @@ print("Accuracy score: ",z)
 
 ## Discussion <br/>
 - Data Preprocessing: <br/>
+
 &emsp;The very first part of this project is to extract the features that relates to the main purpose of this project (predict the ARRIVAL_DELAY). So the data set of “airlines” and “airports” are not selected to use. All the features in “flights” data that are unrelated with predicting is dropped in the first place. For example, “weather_delay”, “late_airport_dealy”, “cancelled” and “diverted”. These features indicates either not delaying or reasons of delaying. The “YEAR” is dropped since all data are collected from 2015. <br/>
 
 &emsp;Then the overlapping features are dropped. For example, there are two features “scheduled_departure” and “departure_time),  which is overlapped with “departure_delay”. “Tail_number” is funcitoning same as index. These overlapped features are dropped.
