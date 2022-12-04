@@ -249,6 +249,10 @@ The dataframe has 5819079 rows × 10 columns at this point. Six of features “M
 
 &emsp;Then for the polynomial regression, based on the amount of dataset, our machine is not supporting degrees over 5. For the testing purpose, degree 3 is applied here with stable error on both test and training set. Parameter n_jobs is set to -1 in LinearRegression to use all processors, but very higher speeds.  
 
+&emsp;With the first two models given the intuition, the dataset is able to provide a prediction below 200. The next two models have a similar process to add regularization to a linear model. For both of these two models (Lasso and Ridge Regression) are applied here to improve performance by “adjusting”/regularizing the weights of features. Also, it is optimizing relate to the main purpose of this project. It needs to indicate which aspects affect the arrival delay most.
+
+&emsp;For Lasso Regression, parameters “selection”  and “alpha” (controlling the strength of regularization). Alpha around 0.01 has the best performance based on approaches, and selection is selected as “random” to have a more randomized training model. For Ridge Regression,  it has similar accuracy compared to Lasso Regression. Meanwhile, the parameters do not influence the accuracy as much as Lasso Regression. The “solver” is chosen as “sag”, which is based on Stochastic Average Gradient descent since the dataset has been scaled in preprocessing part.
+
 - Results analysis: <br/> 
 
 - Possibly frauts / short-comings: <br/>
