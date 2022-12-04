@@ -221,6 +221,12 @@ z = reg.score(X_test, y_test)
 print("Accuracy score: ",z)
 ```
 
+## Results <br/>
+
+## Discussion <br/>
+
+## Conclusion <br/>
+ 
 ## Group Members:
 Zhaolin Zhong, 
 Shang Wu,
