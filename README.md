@@ -39,7 +39,7 @@ print (id) # Verify that you have everything after '='
 downloaded = drive.CreateFile({'id':id}) 
 downloaded.GetContentFile('flights.csv')  
 ```
-
+Pandas and Numpy is required for this project for basic data processing.
 ```python
 import  pandas as pd
 import  numpy as np
