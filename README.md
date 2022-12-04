@@ -243,6 +243,12 @@ The dataframe has 5819079 rows × 10 columns at this point. Six of features “M
 
 - Model Selection and Training: <br/>
 
+&emsp;Model training starts by splitting test and training data, we started spliting the test_size of 10%. While the testing error  is much higher than the training error, which indicates overfitting condition. The final splitting rate applied is 20:80 which has the most stable errors. Note we have a very big data-set that training all dataset takes a very long time and could lead to RAM fulfilled on the system. Hence, some part of samples are extrated from random select function (built in pandas), 10% of data is extrated and the training size 457120.Since the goal is to predict the value of “ARRIVAL_DELAY”, it is set use the target.
+
+&emsp;The first two models, we simply started it with linear regression with SGD regressor and a polynomial regression model. Selecting these two model is the initial stage to see how does the dataset overall performance of predicting the target by regressions. SGD is selected due to its efficiency, since there is a large dataset, and first model is to overview the performace. Two parameters are applied here, shuffle and alpha has been reset. The idea is to have a more random training in each eopch and faster model built. Alpha has been tested and 0.0001 has the optimized output. Scatter plotting is applied on three most weighted attributes.
+
+&emsp;Then for the polynomial regression, based on the amount of dataset, our machine is not supporting degrees over 5. For the testing purpose, degree 3 is applied here with stable error on both test and training set. Parameter n_jobs is set to -1 in LinearRegression to use all processors, but very higher speeds.  
+
 - Results analysis: <br/> 
 
 - Possibly frauts / short-comings: <br/>
